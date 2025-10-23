@@ -1,16 +1,5 @@
 import React from 'react';
 
-// how to pass props to a React component:
-// 1. Table component that receives data as a prop
-// and uses it directly without additional destructuring
-
-// 2. I could write it like this: function Table(props) {}
-// but then I'll have to use props.data inside the function
-
-// 3. By destructuring in the parameter list, I can access data directly
-//if I have more than one props, I can destructure them all here like:
-// function Table({ data, title, loading, onRowClick, className }) {}
-
 //traditional way of declaring function
 /*function Table({ data }) {
     if (!data || data.length === 0) {
