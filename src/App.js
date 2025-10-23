@@ -1,8 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
+import Table from './Table';
 
 function App() {
-  return (
+  const data = [
+    { id: 1, name: 'Alice', role: 'Admin', location: 'New York' },
+    { id: 2, name: 'Bob', role: 'User', location: 'San Francisco' },
+    { id: 3, name: 'Charlie', role: 'Moderator', location: 'Los Angeles' }
+  ];
+
+  return(
+    <div style={{padding: '20px'}}>
+      <h1>Employee Table</h1>
+      <Table data = {data}/>
+    </div>
+  );
+  /*return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -19,7 +32,7 @@ function App() {
         </a>
       </header>
     </div>
-  );
+  );*/
 }
 
 export default App;
